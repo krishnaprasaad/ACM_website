@@ -29,8 +29,9 @@
     <section><img class="img-fluid d-md-none" src="assets/img/hero-mobile.png">
         <div data-bss-scroll-zoom="true" data-bss-scroll-zoom-speed="0.3" style="background-image: url(&quot;assets/img/hero.jpeg&quot;);background-position: center;background-size: cover;">
             <div class="text-center d-flex flex-column justify-content-center align-items-center py-4 px-3 hero-content">
-                <h1 class="display-1 fw-bold">Welcome to ACM VITC</h1>
-                <p class="fs-5"><strong>Any sufficient technology is indistinguible from magic</strong></p><button class="btn btn-dark" type="button">Follow us for more info</button>
+                <h1 class="display-1 fw-bold">Welcome to <span class ="auto-type"></span></h1>
+                <p class="fs-5"><strong>Any sufficient technology is indistinguible from magic</strong></p>
+                <button class="btn btn-dark" type="button">Follow us for more info</button>
             </div>
         </div>
     </section>
@@ -200,6 +201,15 @@
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.auto-type', {
+            strings: ['<strong>ACM-VITC</strong>', '<strong>Association of Computer Misionary</strong>'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>
